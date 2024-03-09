@@ -1,0 +1,173 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #87CEEB;
+}
+
+nav{
+    padding-top: 15px;
+    display: flex;
+    align-items: center;
+    width: 90%;
+    margin: 5px auto;
+    justify-content: space-between;
+}
+
+.container {
+    background-image: url(images/airport.jpeg);
+    padding-bottom: 50px;
+}
+
+.nav .toggleButton {
+    color: #fff;
+    font-size: 1.8rem;
+    cursor: pointer;
+    display: none;
+    margin-right: 15px;
+}
+
+.logo{
+    display: flex;
+    align-items: center;
+}
+nav img{
+    width: 50px;
+    height: 50px;
+    border-radius: 30px;
+}
+
+nav ul{
+    display: flex;
+    list-style: none;
+    cursor: pointer;
+    font-size: large;
+    font-weight: bold;
+}
+
+nav ul li{
+    padding: 0 30px;
+}
+
+nav .btns{
+    cursor: pointer;
+    font-size: large;
+    font-weight: bolder;
+    border: none;
+    background: transparent;
+}
+
+nav .btns:hover {
+    color: #3be5c3;
+}
+
+.center{
+ width: 600px;
+ margin: 50px 70px;
+}
+
+.center h1{
+    font-size: 70px;
+}
+
+.center p{
+    font-size: larger;
+    font-weight: 50px;
+    padding: 30px 0;
+}
+
+.center a{
+    padding: 10px 25px;
+    border-radius: 5px;
+    background-color: rgb(32, 32, 184);
+    color: white;
+    text-decoration: none;
+}
+
+
+.status{
+    width: 80%;
+    height: 150px;
+    margin: auto;
+    position: relative;
+    background-color: white;
+    border: 2px solid white;
+    border-radius: 5px;
+    box-shadow: 10px 10px 40px rgb(73, 70, 70);
+}
+
+.flight-status{
+    width: 90%;
+    height: 35px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color:rgb(230, 217, 165);
+    margin: auto;
+    position: relative;
+
+}
+.flight-status i{
+    padding: 0 5px;
+}
+.flight-status span{
+    width: 105px;
+    text-align: center;
+    background-color: white;
+}
+.from i{
+    padding: 0 5px;
+}
+.flight-status span{
+    margin-left: 40px;
+}
+
+.search{
+    width: 50px;
+    height: 35px;
+    background-color: black;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: large;
+}
+
+.option{
+    display: flex;
+    justify-content: space-between;
+}
+.option i{
+    padding: 0 10px;
+}
+.option ul{
+    display: flex;
+    list-style: none;
+    margin: 15px 25px;
+}
+.option ul li{
+    padding: 0 30px;
+}
+.option p{
+    margin: 15px 25px;
+}
+
+
+.check ul{
+    display: flex;
+    list-style: none;
+    justify-content: space-evenly;
+    margin: 15px 0;
+}
+.check ul i{
+    padding: 0 10px;
+}
+
+.check .line {
+    border-bottom: 2px solid rgb(114, 107, 107);
+    width: 200px;
+    text-align: center;
+    padding: 4px 0;
+}

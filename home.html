@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="home.css">
+    <link rel="stylesheet" type="text/css" href="footer.css" />
+    <link rel="stylesheet" type="text/css" href="logIn-register.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+        integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <div class="container">
+        <nav>
+            <div class="logo">
+                <button style="display: flex;background: transparent;border: none;" onclick="window.location.href='home.html';">
+                    <img src="images/airplane.png" alt="" style="margin-right: 15px;">
+                    <h1 style="margin-top: 15px;">AeroHub</h1>
+                </button>
+            </div>
+            <ul>
+                <li class="btns"><a href="home.html"></a>Home</li>
+                <li class="btns"><a href="home.html"></a>Your Cart</li>
+                <li class="btns"><a href="home.html"></a> Favourites</li>
+                <li class="btns"><a href="home.html"></a>Your Orders</li>
+            </ul>
+            <button class="btns" id="getStarted">LOGIN / SIGNUP</button>
+        </nav>
+        <div class="center">
+            <h1>Life Is Short And The World Is Wide!</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores quia doloribus pariatur ipsum, error at
+                deleniti nam. Ea, architecto corrupti. Lorem ipsum dolor sit amet.</p>
+
+            <a href="#">Try For Free</a>
+        </div>
+
+        <!-- BOOK A FLIGHT SECTION -->
+        <div class="status" style="margin-top: 100px;">
+            <div class="option">
+                <ul>
+                    <li> <i class="fa-solid fa-plane"></i>Round trip</li>
+                    <li> <i class="fa-solid fa-user"></i>Adult</li>
+                    <li> <i class="fa-solid fa-tag"></i>Economy</li>
+                </ul>
+                <p>Looking for Travel ideas? Explore Map <i class="fa-solid fa-earth-asia"></i></p>
+            </div>
+            <div class="flight-status">
+                <span style="display: flex;">
+                    <span>From:</span> 
+                    <span>
+                        <input type="text" placeholder="Bern, CHA">
+                    </span>
+                </span>
+                <span style="display: flex; margin-left: 70px;">
+                    <span>To:</span> 
+                    <span>
+                        <input type="text" placeholder="Athens, GRE">
+                    </span>
+                </span>
+
+                <span>
+                    <input type="date">
+                </span>
+                <span>
+                    <input type="date">
+                </span>
+                <div class="search"><i class="fa-solid fa-magnifying-glass"></i></div>
+            </div>
+            <div class="check">
+                <ul>
+                    <li> <i class="fa-solid fa-tags"></i>My Booking</li>
+                    <li class="line"><i class="fa-solid fa-circle-plus"></i>Flight Status</li>
+                    <li> Charter Flights</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <!-- LOGIN/REGISTER FORMS -->
+    <div class="wrapper">
+        <span class="icon-close">
+            <i class="fa-solid fa-xmark"></i>
+          </span>
+
+        <div class="form-box login">
+            <h2>Login</h2>
+            <form id="loginForm"> 
+              <div class="input-box">
+                <span class="icon"
+                  ><i class="fa-sharp fa-solid fa-envelope"></i
+                ></span>
+                <input type="email" name="email_L"/>
+                <label>Email</label>
+              </div>
+              <div class="input-box">
+                <span class="icon"><i class="fa-sharp fa-solid fa-key"></i></span>
+                <input type="password" name="password_L"/>
+                <label>Password</label>
+              </div>
+              <input type="hidden" name="action" value="loginAction">
+              <div class="remember-forgot">
+                <label><input type="checkbox" />Remember me</label>
+                <a href="#">Forgot Password?</a>
+              </div>
+              <button type="submit" class="btn" id="loginBtn">Login</button>
+              <div class="login-register">
+                <p>
+                  Don't have an Account?
+                  <a href="#" class="register-link"> Register</a>
+                </p>
+              </div>
+            </form>
+          </div>
+
+          <!-- SIGN UP -->
+        <div class="form-box register">
+            <h2>Sign Up</h2>
+            <form id="signUpForm">
+            <div class="input-box">
+                <span class="icon"><i class="fa-solid fa-user"></i></span>
+                <input type="text" name="username_R"/> <!-- Username Register -->
+                <label>Username</label>
+            </div>
+            <div class="input-box">
+                <span class="icon"
+                ><i class="fa-sharp fa-solid fa-envelope"></i
+                ></span>
+                <input type="email" name="email_R"/> <!-- Email Register -->
+                <label>Email</label>
+            </div>
+            <div class="input-box">
+                <span class="icon"><i class="fa-sharp fa-solid fa-key"></i></span>
+                <input type="password" name="password_R"/> <!-- Password Register -->
+                <label>Password</label>
+            </div>
+            <input type="hidden" name="action" value="signUpAction">
+            <div class="remember-forgot">
+                <label
+                ><input type="checkbox" />I agree to the terms & conditions</label
+                >
+            </div>
+            <button type="submit" class="btn" id="submitBtn">Register</button>
+            <div class="login-register">
+                <p>
+                Already have an account?
+                <a href="#" class="login-link"> Login</a>
+                </p>
+            </div>
+            </form>
+        </div>
+    </div>
+
+    
+
+
+    <!-- FOOTER -->
+    <div class="FOOTER">
+        <div class="footercontainer">
+          <div class="row">
+            <div class="footer-col">
+              <h4>Company</h4>
+              <ul>
+                <li><a href="about.html">About us</a></li>
+                <li><a href="contact.html">Contact us</a></li>
+                <li><a href="services.html">Services</a></li>
+              </ul>
+            </div>
+  
+            <div class="footer-col">
+              <h4>Help</h4>
+              <ul>
+                <li><a href="#">Terms of use</a></li>
+                <li><a href="#">Refund Policy</a></li>
+                <li><a href="#">FAQ</a></li>
+              </ul>
+            </div>
+  
+            <div class="footer-col">
+              <h4>Find us on social media</h4>
+              <div class="social-links">
+                <a href="https://www.facebook.com/mediterraneancollege/">
+                  <i class="fab fa-facebook-f"></i
+                ></a>
+                <a
+                  href="https://www.instagram.com/mediterranean_college?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="
+                >
+                  <i class="fab fa-instagram"></i
+                ></a>
+              </div>
+            </div>
+  
+            <div class="footer-col">
+              <h4>Copyright© AeroHub</h4>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    <script src="popup-transition.js"></script>
+</body>
+
+</html>

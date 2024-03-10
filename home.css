@@ -7,17 +7,52 @@ body {
     background-color: #87CEEB;
 }
 
-nav{
+.navBar {
+    background-image: url(images/sky.webp);
+    background-size: cover; /* Cover the entire section */
+    background-position: center; /* Center the background image */
+    background-repeat: no-repeat; /* Prevent background image from repeating */
+    
+    margin-left: 50px;
     padding-top: 15px;
+    padding-bottom: 15px;
     display: flex;
     align-items: center;
-    width: 90%;
+    width: 100%;
     margin: 5px auto;
     justify-content: space-between;
+    border-bottom: 5px solid #9cebff;
+    position: fixed; /* Stick the navigation bar to the top */
+    top: 0; /* Position it at the top of the viewport */
+    z-index: 1000; /* Set a high z-index value to keep it on top */
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    position: relative;
+    left: 75px;
+}
+
+ul {
+    display: flex;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.btns {
+    padding: 10px 20px;
+    background-color: transparent;
+    border: none;
 }
 
 .container {
     background-image: url(images/airport.jpeg);
+    background-size: cover; /* Cover the entire section */
+    background-position: center; /* Center the background image */
+    background-repeat: no-repeat; /* Prevent background image from repeating */
+    height: 700px;
     padding-bottom: 50px;
 }
 
@@ -66,6 +101,8 @@ nav .btns:hover {
 .center{
  width: 600px;
  margin: 50px 70px;
+ position: relative;
+ top: 75px;
 }
 
 .center h1{
@@ -92,6 +129,7 @@ nav .btns:hover {
     height: 150px;
     margin: auto;
     position: relative;
+    top: 75px;
     background-color: white;
     border: 2px solid white;
     border-radius: 5px;

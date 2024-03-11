@@ -33,51 +33,10 @@
         </nav>
         <div class="center">
             <h1>Life Is Short And The World Is Wide!</h1>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores quia doloribus pariatur ipsum, error at
-                deleniti nam. Ea, architecto corrupti. Lorem ipsum dolor sit amet.</p>
+            <p>Welcome to AeroHub! Say goodbye to endless browsing and hello to effortless travel planning. 
+              We're dedicated to providing an easy-to-use platform for booking your flight tickets hassle-free! </p>
 
-            <a href="#">Try For Free</a>
-        </div>
-
-        <!-- BOOK A FLIGHT SECTION -->
-        <div class="status" style="margin-top: 100px;">
-            <div class="option">
-                <ul>
-                    <li> <i class="fa-solid fa-plane"></i>Round trip</li>
-                    <li> <i class="fa-solid fa-user"></i>Adult</li>
-                    <li> <i class="fa-solid fa-tag"></i>Economy</li>
-                </ul>
-                <p>Looking for Travel ideas? Explore Map <i class="fa-solid fa-earth-asia"></i></p>
-            </div>
-            <div class="flight-status">
-                <span style="display: flex;">
-                    <span>From:</span> 
-                    <span>
-                        <input type="text" placeholder="Bern, CHA">
-                    </span>
-                </span>
-                <span style="display: flex; margin-left: 70px;">
-                    <span>To:</span> 
-                    <span>
-                        <input type="text" placeholder="Athens, GRE">
-                    </span>
-                </span>
-
-                <span>
-                    <input type="date">
-                </span>
-                <span>
-                    <input type="date">
-                </span>
-                <div class="search"><i class="fa-solid fa-magnifying-glass"></i></div>
-            </div>
-            <div class="check">
-                <ul>
-                    <li> <i class="fa-solid fa-tags"></i>My Booking</li>
-                    <li class="line"><i class="fa-solid fa-circle-plus"></i>Flight Status</li>
-                    <li> Charter Flights</li>
-                </ul>
-            </div>
+            <button class="tryBtn">Try it yourself!</button>
         </div>
     </div>
 
@@ -155,7 +114,53 @@
         </div>
     </div>
 
-    
+    <div class="bookFlightSection">
+      <!-- BOOK A FLIGHT SECTION -->
+      <div class="status">
+        <div class="option">
+            <ul>
+                <li> <i class="fa-solid fa-plane"></i>Round trip</li>
+                <li> <i class="fa-solid fa-user"></i>Adult</li>
+                <li> <i class="fa-solid fa-tag"></i>Economy</li>
+            </ul>
+            <p>Looking for Travel ideas? Explore Map <i class="fa-solid fa-earth-asia"></i></p>
+        </div>
+        <div class="flight-status">
+            <span class="from" style="display: flex;">
+                <p>From:</p> 
+                <span>
+                    <input type="text" placeholder="Bern, CHA">
+                </span>
+            </span>
+            <span class="to" style="display: flex;">
+                <p>To:</p> 
+                <span>
+                    <input type="text" placeholder="Athens, GRE">
+                </span>
+            </span>
+
+            <span class="depDate"><p>Dep. Date</p></span>
+
+            <span class="fromDate" style="display: flex;">
+                <input type="date" class="fromD">
+            </span>
+
+            <span class="arrDate"><p>Arr. Date</p></span>
+            <span class="toDate">
+                <input type="date" class="toD">
+            </span>
+
+            <div class="search"><i class="fa-solid fa-magnifying-glass"></i></div>
+        </div>
+        <div class="check">
+            <ul>
+                <li> <i class="fa-solid fa-tags"></i>My Booking</li>
+                <li class="line"><i class="fa-solid fa-circle-plus"></i>Flight Status</li>
+                <li> Charter Flights</li>
+            </ul>
+        </div>
+      </div>
+    </div>
 
 
     <!-- FOOTER -->
@@ -166,17 +171,15 @@
               <h4>Company</h4>
               <ul>
                 <li><a href="about.html">About us</a></li>
-                <li><a href="contact.html">Contact us</a></li>
-                <li><a href="services.html">Services</a></li>
+                <li><a href="#">Terms of use</a></li>
               </ul>
             </div>
   
             <div class="footer-col">
               <h4>Help</h4>
               <ul>
-                <li><a href="#">Terms of use</a></li>
-                <li><a href="#">Refund Policy</a></li>
-                <li><a href="#">FAQ</a></li>
+                <li><a href="contact.html">Contact us</a></li>
+                <li><a href="#">Most Frequent Questions</a></li>
               </ul>
             </div>
   
@@ -201,7 +204,7 @@
         </div>
       </div>
 
-    <script src="popup-transition.js"></script>
+    <script src="home.js"></script>
     <script src="sticky.js"></script>
 </body>
 

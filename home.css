@@ -22,16 +22,16 @@ body {
     margin: 5px auto;
     justify-content: space-between;
     border-bottom: 5px solid #9cebff;
+    margin-top: -5px;
     position: fixed; /* Stick the navigation bar to the top */
     top: 0; /* Position it at the top of the viewport */
     z-index: 1000; /* Set a high z-index value to keep it on top */
 }
 
-.logo {
-    display: flex;
-    align-items: center;
+.navBar #getStarted {
     position: relative;
-    left: 75px;
+    right: 45px;
+    top: 2px;
 }
 
 ul {
@@ -48,7 +48,7 @@ ul {
 }
 
 .container {
-    background-image: url(images/airport.jpeg);
+    background-image: url(images/airport.jpg);
     background-size: cover; /* Cover the entire section */
     background-position: center; /* Center the background image */
     background-repeat: no-repeat; /* Prevent background image from repeating */
@@ -67,6 +67,8 @@ ul {
 .logo{
     display: flex;
     align-items: center;
+    position: relative;
+    left: 75px;
 }
 nav img{
     width: 50px;
@@ -75,6 +77,8 @@ nav img{
 }
 
 nav ul{
+    position: relative;
+    right: -15px;
     display: flex;
     list-style: none;
     cursor: pointer;
@@ -106,18 +110,26 @@ nav .btns:hover {
 }
 
 .center h1{
+    position: relative;
+    top: -25px;
     font-size: 70px;
+    color: white;
 }
 
 .center p{
+    position: relative;
+    top: -38px;
     font-size: larger;
     font-weight: 50px;
     padding: 30px 0;
+    color: white;
 }
 
-.center a{
+.center .tryBtn{
     padding: 10px 25px;
     border-radius: 5px;
+    position: relative;
+    top: -45px;
     background-color: rgb(32, 32, 184);
     color: white;
     text-decoration: none;
@@ -129,11 +141,16 @@ nav .btns:hover {
     height: 150px;
     margin: auto;
     position: relative;
-    top: 75px;
+    top: 40px;
     background-color: white;
     border: 2px solid white;
     border-radius: 5px;
     box-shadow: 10px 10px 40px rgb(73, 70, 70);
+}
+
+.bookFlightSection {
+    height: 250px;
+    border-top: 5px solid white;
 }
 
 .flight-status{
@@ -147,6 +164,68 @@ nav .btns:hover {
     position: relative;
 
 }
+
+.flight-status .from {
+    position:relative;
+    left: -35px;
+}
+
+.flight-status .from p {
+   position: relative;
+   right: -35px;
+}
+
+.flight-status .from span {
+    position: relative;
+    right: -28px;
+}
+
+.flight-status .to {
+    position:relative;
+    right: -60px;
+}
+
+.flight-status .to p {
+    position:relative;
+    left: 43px;
+}
+
+.flight-status .to span {
+    position:relative;
+    right: -46px;
+}
+
+.flight-status .depDate {
+    position: relative;
+    right: -155px;
+}
+
+.flight-status .fromDate {
+    position: relative;
+    right: -100px;
+}
+
+.flight-status .fromDate p {
+    position: relative;
+    left: -25px;
+}
+
+.flight-status .fromDate .fromD {
+    position: relative;
+    left: -2px;
+}
+
+.flight-status .arrDate {
+    position: relative;
+    right: -50px;
+}
+
+.flight-status .toDate {
+    position:relative;
+    left:-8px;
+}
+
+
 .flight-status i{
     padding: 0 5px;
 }
@@ -155,6 +234,7 @@ nav .btns:hover {
     text-align: center;
     background-color: white;
 }
+
 .from i{
     padding: 0 5px;
 }
@@ -209,3 +289,53 @@ nav .btns:hover {
     text-align: center;
     padding: 4px 0;
 }
+
+
+/* RESPONSIVE DESIGN */
+@media(max-width: 1213px){
+    .logo {
+        left: 5px;
+    }
+    .navBar .links,
+    .navBar .getStarted{
+      display: none;
+    }
+  
+    .navBar{
+      backdrop-filter: blur(0);
+    }
+  
+    .navBar .toggleButton{
+      display: block;
+    }
+  
+    .dropDownMenu {
+      display: block;
+    }
+  }
+  
+  @media(max-width: 576px){
+    .dropDownMenu {
+      left: 2rem;
+      width: unset;
+    } 
+  }
+  @media(max-width: 576px){
+    .services>.container{
+      display: none; 
+    }
+    .search>.container {
+       display: none;
+    }
+  }
+  @media(max-width: 1117px){
+    .search>.container {
+      align-items: center;
+      height: 55vh;
+      width: 50%;
+    }
+    .search-bar {
+      padding: 0px 10px;
+    }
+  }
+  
